@@ -1,99 +1,111 @@
-/* Basic Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
+    color: #222222;
+  }
+  
+  header {
+    background-color: #111827;
+    color: #f97316;
     padding: 20px;
     text-align: center;
-}
-
-header nav ul {
+    position: relative;
+  }
+  
+  nav ul {
     list-style-type: none;
     padding: 0;
-}
-
-header nav ul li {
+  }
+  
+  nav ul li {
     display: inline;
     margin-right: 20px;
-}
-
-header nav ul li a {
+  }
+  
+  nav ul li a {
     color: white;
     text-decoration: none;
-}
-
-button.menu-button {
+    font-weight: 600;
+  }
+  
+  .menu-button {
     display: none;
-    background-color: #333;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
     color: white;
     font-size: 24px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-/* Main content */
-main {
+  }
+  
+  main {
     padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #333;
+  }
+  
+  footer {
+    background-color: #f97316;
     color: white;
-    padding: 10px;
     text-align: center;
-}
-
-/* Form styles */
-form {
+    padding: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #111827;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-}
-
-label {
+  }
+  
+  label {
     margin: 10px 0 5px;
-}
-
-input, textarea {
+  }
+  
+  input,
+  textarea {
     padding: 10px;
     margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Button styling */
-button[type="submit"] {
-    background-color: #333;
+    border: 1px solid #111827;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background-color: #111827;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
-}
-
-/* Media Query for smaller screens */
-@media (max-width: 600px) {
-    header nav ul {
-        display: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #111827;
     }
-
-    header nav ul.active {
-        display: block;
+  
+    nav ul.active {
+      display: flex;
     }
-
-    button.menu-button {
-        display: block;
+  
+    .menu-button {
+      display: block;
     }
-
-    section {
-        padding: 15px;
-    }
-}
+  }
+  
